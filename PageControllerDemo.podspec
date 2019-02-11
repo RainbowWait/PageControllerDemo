@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   # s.tvos.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/RainbowWait/PageControllerDemo.git", :tag => "0.0.1" }
-  s.source_files  = "Classes", "Classes/**/*.{swift}"
+  s.source_files  = "Class", "Class/**/*.{swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
