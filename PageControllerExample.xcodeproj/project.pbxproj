@@ -18,13 +18,13 @@
 		A823156420527B24007527E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A823156220527B24007527E4 /* LaunchScreen.storyboard */; };
 		A823156F20527B24007527E4 /* PageControllerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A823156E20527B24007527E4 /* PageControllerExampleTests.swift */; };
 		A823157A20527B24007527E4 /* PageControllerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A823157920527B24007527E4 /* PageControllerExampleUITests.swift */; };
-		A823158820527BA8007527E4 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A823158720527BA8007527E4 /* MenuItem.swift */; };
-		A823158B20527C84007527E4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A823158A20527C84007527E4 /* MenuView.swift */; };
-		A823158D20527C9E007527E4 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A823158C20527C9E007527E4 /* ProgressView.swift */; };
-		A86857D12064F663000A3DEB /* ProtocolMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86857D02064F663000A3DEB /* ProtocolMethod.swift */; };
-		A86857D32064F788000A3DEB /* EnumConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86857D22064F788000A3DEB /* EnumConfiguration.swift */; };
 		A86857D62071D273000A3DEB /* ExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86857D52071D273000A3DEB /* ExampleController.swift */; };
-		C3E4D02821FFF2C2007D17D5 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4D02721FFF2C2007D17D5 /* PageController.swift */; };
+		C37B52E922110D2200FB2A1E /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B52E322110D2200FB2A1E /* PageController.swift */; };
+		C37B52EA22110D2200FB2A1E /* ProtocolMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B52E422110D2200FB2A1E /* ProtocolMethod.swift */; };
+		C37B52EB22110D2200FB2A1E /* EnumConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B52E522110D2200FB2A1E /* EnumConfiguration.swift */; };
+		C37B52EC22110D2200FB2A1E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B52E622110D2200FB2A1E /* ProgressView.swift */; };
+		C37B52ED22110D2200FB2A1E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B52E722110D2200FB2A1E /* MenuItem.swift */; };
+		C37B52EE22110D2200FB2A1E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B52E822110D2200FB2A1E /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,13 +62,13 @@
 		A823157520527B24007527E4 /* PageControllerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageControllerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A823157920527B24007527E4 /* PageControllerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControllerExampleUITests.swift; sourceTree = "<group>"; };
 		A823157B20527B24007527E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A823158720527BA8007527E4 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
-		A823158A20527C84007527E4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		A823158C20527C9E007527E4 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		A86857D02064F663000A3DEB /* ProtocolMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolMethod.swift; sourceTree = "<group>"; };
-		A86857D22064F788000A3DEB /* EnumConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumConfiguration.swift; sourceTree = "<group>"; };
 		A86857D52071D273000A3DEB /* ExampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleController.swift; sourceTree = "<group>"; };
-		C3E4D02721FFF2C2007D17D5 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		C37B52E322110D2200FB2A1E /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		C37B52E422110D2200FB2A1E /* ProtocolMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolMethod.swift; sourceTree = "<group>"; };
+		C37B52E522110D2200FB2A1E /* EnumConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumConfiguration.swift; sourceTree = "<group>"; };
+		C37B52E622110D2200FB2A1E /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		C37B52E722110D2200FB2A1E /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		C37B52E822110D2200FB2A1E /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,19 +96,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A81F47392074610E00BEDBAF /* MenuView */ = {
-			isa = PBXGroup;
-			children = (
-				C3E4D02721FFF2C2007D17D5 /* PageController.swift */,
-				A86857D22064F788000A3DEB /* EnumConfiguration.swift */,
-				A86857D02064F663000A3DEB /* ProtocolMethod.swift */,
-				A823158A20527C84007527E4 /* MenuView.swift */,
-				A823158C20527C9E007527E4 /* ProgressView.swift */,
-				A823158720527BA8007527E4 /* MenuItem.swift */,
-			);
-			path = MenuView;
-			sourceTree = "<group>";
-		};
 		A823154A20527B24007527E4 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +119,7 @@
 		A823155520527B24007527E4 /* PageControllerExample */ = {
 			isa = PBXGroup;
 			children = (
-				A81F47392074610E00BEDBAF /* MenuView */,
+				C37B52E222110D2200FB2A1E /* Classes */,
 				A823155620527B24007527E4 /* AppDelegate.swift */,
 				A86857D52071D273000A3DEB /* ExampleController.swift */,
 				A823155820527B24007527E4 /* ViewController.swift */,
@@ -165,6 +152,19 @@
 			);
 			path = PageControllerExampleUITests;
 			sourceTree = "<group>";
+		};
+		C37B52E222110D2200FB2A1E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C37B52E322110D2200FB2A1E /* PageController.swift */,
+				C37B52E422110D2200FB2A1E /* ProtocolMethod.swift */,
+				C37B52E522110D2200FB2A1E /* EnumConfiguration.swift */,
+				C37B52E622110D2200FB2A1E /* ProgressView.swift */,
+				C37B52E722110D2200FB2A1E /* MenuItem.swift */,
+				C37B52E822110D2200FB2A1E /* MenuView.swift */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -300,19 +300,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37B52E922110D2200FB2A1E /* PageController.swift in Sources */,
+				C37B52EA22110D2200FB2A1E /* ProtocolMethod.swift in Sources */,
 				A801F7FA205F874200E66BD1 /* FirstViewController.swift in Sources */,
-				A86857D32064F788000A3DEB /* EnumConfiguration.swift in Sources */,
-				A823158B20527C84007527E4 /* MenuView.swift in Sources */,
 				A81F4738207354D600BEDBAF /* SecondController.swift in Sources */,
 				A823155920527B24007527E4 /* ViewController.swift in Sources */,
-				C3E4D02821FFF2C2007D17D5 /* PageController.swift in Sources */,
-				A823158820527BA8007527E4 /* MenuItem.swift in Sources */,
 				A823155F20527B24007527E4 /* PageControllerExample.xcdatamodeld in Sources */,
 				A823155720527B24007527E4 /* AppDelegate.swift in Sources */,
-				A823158D20527C9E007527E4 /* ProgressView.swift in Sources */,
+				C37B52EE22110D2200FB2A1E /* MenuView.swift in Sources */,
 				A801F7F8205F47C500E66BD1 /* CustomViewController.swift in Sources */,
 				A86857D62071D273000A3DEB /* ExampleController.swift in Sources */,
-				A86857D12064F663000A3DEB /* ProtocolMethod.swift in Sources */,
+				C37B52ED22110D2200FB2A1E /* MenuItem.swift in Sources */,
+				C37B52EB22110D2200FB2A1E /* EnumConfiguration.swift in Sources */,
+				C37B52EC22110D2200FB2A1E /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

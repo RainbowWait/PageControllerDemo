@@ -94,11 +94,11 @@ open class PageController: UIViewController {
     var progressWidth: CGFloat? {
         didSet {
             self.progressViewWidths = {
-            var tmp: [CGFloat] = [CGFloat]()
+                var tmp: [CGFloat] = [CGFloat]()
                 for _ in 0..<self.childControllersCount {
                     tmp.append(progressWidth!)
                 }
-            return tmp
+                return tmp
             }()
         }
     }
@@ -137,7 +137,7 @@ open class PageController: UIViewController {
                 self.menuView?.removeFromSuperview()
                 self.addMenuView()
                 self.forceLayoutSubviews()
-            self.menuView?.slideMenuAtProgress(CGFloat(self.selectIndex))
+                self.menuView?.slideMenuAtProgress(CGFloat(self.selectIndex))
             }
         }
     }
@@ -191,7 +191,7 @@ open class PageController: UIViewController {
     fileprivate var memoryWarningCount = 0
     fileprivate var _selectIndex: Int = 0
     fileprivate var _markedSelectIndex = -1
-   fileprivate var childControllersCount: Int {
+    fileprivate var childControllersCount: Int {
         if controllerCount == -1 {
             if let count = self.dataSource?.numbersOfChildControllersInPageController?(self) {
                 controllerCount = count
@@ -635,9 +635,14 @@ open class PageController: UIViewController {
     
     fileprivate func calculateItemWithAtIndex(_ index: Int) -> CGFloat {
         let title = self.titleAtIndex(index)
-        let titleFont = self.titleFontName != nil ? UIFont(name: self.titleFontName!, size: self.titleSizeSelected) : UIFont.systemFont(ofSize: self.titleSizeSelected)
+        let titleFont: UIFont
+        if let titleFontName = self.titleFontName {
+            titleFont = UIFont(name: titleFontName, size: self.titleSizeSelected)  ?? UIFont.systemFont(ofSize: self.titleSizeSelected)
+        } else {
+            titleFont = UIFont.systemFont(ofSize: self.titleSizeSelected)
+        }
         
-        let itemWidth = NSString(string: title).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [NSAttributedStringKey.font : titleFont ?? ""], context: nil).size.width
+        let itemWidth = NSString(string: title).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [.font : titleFont], context: nil).size.width
         
         return CGFloat(ceil(itemWidth))
     }
@@ -685,12 +690,12 @@ open class PageController: UIViewController {
         }
         self.forceLayoutSubviews()
         hasInited = true
-                self.delaySelectIndexIfNeeded()
+        self.delaySelectIndexIfNeeded()
     }
     
     func delaySelectIndexIfNeeded()  {
         if _markedSelectIndex != 1{
-            self.selectIndex = _selectIndex            
+            self.selectIndex = _selectIndex
         }
     }
     
@@ -771,25 +776,25 @@ extension PageController: MenuViewDataSource, MenuViewDelegate {
     
     func menuView(_ menu: MenuView, didLayoutItemFrame menuItem: MenuItem, atIndex index: Int) {
     }
-
+    
     
     /*
-    func menuView(_ menu: MenuView, initialMenuItem item: MenuItem, atIndex index: Int) -> MenuItem? {
-        print("index = \(index) ==initialMenuItem = \(item)")
-        if index == 2 {
-            let item = MenuItem()
-            item.frame = CGRect(x: 120, y: 0, width: 60, height: 44)
-            item.textColor = UIColor.black
-            item.text = "新闻媒体"
-            item.normalColor = UIColor.black
-            item.selectedColor = UIColor.red
-            return item
-        } else {
-            return nil
-        }
-    }
- */
-
+     func menuView(_ menu: MenuView, initialMenuItem item: MenuItem, atIndex index: Int) -> MenuItem? {
+     print("index = \(index) ==initialMenuItem = \(item)")
+     if index == 2 {
+     let item = MenuItem()
+     item.frame = CGRect(x: 120, y: 0, width: 60, height: 44)
+     item.textColor = UIColor.black
+     item.text = "新闻媒体"
+     item.normalColor = UIColor.black
+     item.selectedColor = UIColor.red
+     return item
+     } else {
+     return nil
+     }
+     }
+     */
+    
     
     //data Source
     func numbersOfTitlesInMenuView(_ menuView: MenuView) -> Int {
@@ -799,17 +804,17 @@ extension PageController: MenuViewDataSource, MenuViewDelegate {
         return self.titleAtIndex(index)
     }
     
-//    func menuView(_ menu: MenuView, badgeViewAtIndex index: Int) -> UIView? {
-//        if index == 1 {
-//            let view = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 5))
-//            view.layer.cornerRadius = 2.5
-//            view.backgroundColor = UIColor.red
-//            view.clipsToBounds = true
-//            return view
-//            
-//        }
-//        return nil
-//    }
+    //    func menuView(_ menu: MenuView, badgeViewAtIndex index: Int) -> UIView? {
+    //        if index == 1 {
+    //            let view = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 5))
+    //            view.layer.cornerRadius = 2.5
+    //            view.backgroundColor = UIColor.red
+    //            view.clipsToBounds = true
+    //            return view
+    //
+    //        }
+    //        return nil
+    //    }
     
     
 }

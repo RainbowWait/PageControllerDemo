@@ -111,7 +111,7 @@ open class MenuView: UIView, MenuItemDelegate {
     fileprivate let WMMENUITEM_TAG_OFFSET = 6250
     fileprivate let WMBADGEVIEW_TAG_OFFSET = 1212
     fileprivate var _progressHeight: CGFloat {
-        get {
+       get {
             switch self.style {
             case .line:
                 return getHeight(self.progressHeight)
@@ -127,9 +127,9 @@ open class MenuView: UIView, MenuItemDelegate {
                 return self.progressHeight
             }
         }
-        set {
-            self._progressHeight = self.progressHeight
-        }
+//        set {
+//            _progressHeight = self.progressHeight
+//        }
     }
     fileprivate var _progressViewCornerRadius: CGFloat {
         set {
